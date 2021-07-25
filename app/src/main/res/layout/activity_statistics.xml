@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    testing start-->
+
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@android:id/text1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:minHeight="?android:attr/listPreferredItemHeightSmall"-->
+<!--    android:paddingStart="?android:attr/listPreferredItemPaddingStart"-->
+<!--    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"-->
+<!--    android:shadowColor="#393939"-->
+<!--    android:textAppearance="?android:attr/textAppearanceListItemSmall"-->
+<!--    android:textColor="#E6E6E6" />-->
+
+<!--testing end-->
+
+<!--final layout to be used-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/backgc"
+    android:padding="6dip">
+
+    <TextView
+        android:id="@+id/descrr"
+        android:layout_width="405dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/namee"
+        android:background="#222B39"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/thin"
+        android:maxLines="2"
+        android:paddingStart="2dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/absenteess"
+        android:layout_width="405dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/descrr"
+        android:background="#222B39"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/thin"
+        android:maxLines="1"
+        android:paddingStart="2dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="Absentees this week : "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/codee"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/namee"
+        android:background="#222B39"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/regular"
+        android:maxLines="1"
+        android:paddingStart="2dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="code"
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/namee"
+        android:layout_width="190dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:background="#222B39"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/bold"
+        android:maxLines="1"
+        android:paddingStart="2dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listdashview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/absenteess"
+        android:background="@color/backgc" />
+
+
+</RelativeLayout>

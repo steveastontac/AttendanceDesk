@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    testing start-->
+
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@android:id/text1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:minHeight="?android:attr/listPreferredItemHeightSmall"-->
+<!--    android:paddingStart="?android:attr/listPreferredItemPaddingStart"-->
+<!--    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"-->
+<!--    android:shadowColor="#393939"-->
+<!--    android:textAppearance="?android:attr/textAppearanceListItemSmall"-->
+<!--    android:textColor="#E6E6E6" />-->
+
+<!--testing end-->
+
+<!--final layout to be used-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/backgc"
+    android:padding="6dip">
+
+    <TextView
+        android:id="@+id/descr"
+        android:layout_width="405dp"
+        android:layout_height="20dp"
+android:layout_below="@id/name"
+         android:ellipsize="marquee"
+        android:fontFamily="@font/thin"
+        android:maxLines="2"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/absentees"
+        android:layout_width="405dp"
+        android:layout_height="20dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/thin"
+        android:maxLines="1"
+        android:layout_below="@id/descr"
+        android:text="Absentees this week : "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/name"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/regular"
+        android:maxLines="1"
+        android:text="code"
+        android:textAlignment="textEnd"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="190dp"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/bold"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_height="27dp" />
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/name"-->
+<!--        android:layout_width="168dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_alignWithParentIfMissing="true"-->
+<!--        android:layout_above="@id/name"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginBottom="-6dp"-->
+<!--        android:fontFamily="@font/bold"-->
+<!--        android:text="Example application"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="16sp" />-->
+
+</RelativeLayout>

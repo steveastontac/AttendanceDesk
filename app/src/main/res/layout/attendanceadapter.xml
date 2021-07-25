@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    testing start-->
+
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@android:id/text1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:minHeight="?android:attr/listPreferredItemHeightSmall"-->
+<!--    android:paddingStart="?android:attr/listPreferredItemPaddingStart"-->
+<!--    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"-->
+<!--    android:shadowColor="#393939"-->
+<!--    android:textAppearance="?android:attr/textAppearanceListItemSmall"-->
+<!--    android:textColor="#E6E6E6" />-->
+
+<!--testing end-->
+
+<!--final layout to be used-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@color/backgc"
+    android:padding="6dip">
+
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:ellipsize="marquee"
+        android:fontFamily="@font/thin"
+
+        android:text="Name of student"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+        android:fontFamily="@font/bold"
+        android:gravity="center_vertical"
+        android:text="USN of student"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/present"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:buttonTint="#FFFFFF"
+        android:text="Absent"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+</RelativeLayout>
